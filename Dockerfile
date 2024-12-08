@@ -8,7 +8,7 @@ COPY Caddyfile ./
 
 RUN caddy fmt --overwrite Caddyfile
 
-FROM browserless/chrome:1-chrome-stable
+FROM ghcr.io/browserless/chromium:2.2.0
 
 ENV ENABLE_DEBUGGER=false
 ENV DEBUG=browserless:server
